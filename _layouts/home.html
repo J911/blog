@@ -30,7 +30,7 @@ layout: default
         var numOfPosts = posts.length
 
         for (var i = 0; i<numOfPosts; i++) {
-            endRow = Math.ceil(posts[i].textContent.length / 28) + 2
+            endRow = Math.ceil(posts[i].textContent.length / 28) + 10
             posts[i].style.gridRowEnd = "span " + endRow
             setTimeout(appendCard.bind(null, posts[i]), Math.random()*500)
         }
