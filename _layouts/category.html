@@ -9,7 +9,7 @@ layout: default
             <div class="card__cover" style="background-image: url('{{ post.cover }}');"></div>
             <div class="card__contents">
                 <div class="card__contents__tag">
-                    Deep Learning
+                    {{ post.categories[0] }}
                 </div>
                 <div class="card__contents__title">
                     {{ post.title | escape }}
