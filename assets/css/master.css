@@ -294,8 +294,8 @@ a {
 .post--contents {
     display: block;
     line-height: 2.1rem;
-    width: 1300px;
-    margin: 0 auto;
+    /* width: 1300px;
+    margin: 0 auto; */
 }
 
 .post--contents pre,
