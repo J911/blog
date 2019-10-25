@@ -4,7 +4,7 @@ comments: true
 title:  "지킬 블로그 구축하기"
 date:   2018-09-22
 author: "J911"
-categories: log jekyll web
+categories: web
 cover: "/assets/post-assets/2018-09-22-create-jekyll-blog/cover.jpg"
 ---
 오랜만에 블로깅을 다시 시작하고자 블로그를 리뉴얼 하였다.

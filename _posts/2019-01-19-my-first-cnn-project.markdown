@@ -4,7 +4,7 @@ comments: true
 title:  "난생처음 CNN 프로젝트 해보기(오버피팅 체험해보기)"
 date:   2019-01-19
 author: "J911"
-categories: log ai
+categories: deeplearning
 cover: "/assets/post-assets/2019-01-19-my-first-cnn-project/cover.png"
 ---
 평소 CNN을 공부하고 이론과 예제 프로젝트만 따라해보다가 

@@ -5,7 +5,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var InfiniteScroll = function () {
-    function InfiniteScroll(path, wrapperId) {
+    function InfiniteScroll(path, wrapperId, callback) {
         _classCallCheck(this, InfiniteScroll);
 
         if (path === undefined || wrapperId === undefined) throw Error('no parameter.');
@@ -14,6 +14,7 @@ var InfiniteScroll = function () {
         this.wNode = document.getElementById(wrapperId);
         this.wrapperId = wrapperId;
         this.enable = true;
+        this.callback = callback
 
         this.detectScroll();
     }
@@ -64,6 +65,7 @@ var InfiniteScroll = function () {
             items.forEach(function (item) {
                 _this3.wNode.appendChild(item);
             });
+            _this3.callback()
         }
     }]);
 

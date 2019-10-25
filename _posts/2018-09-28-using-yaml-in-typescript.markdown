@@ -4,7 +4,7 @@ comments: true
 title:  "Node js에서 타입스크립트와 함께 yaml/yml사용하기"
 date:   2018-09-28
 author: "J911"
-categories: nodejs web typescript yaml yml
+categories: server
 cover: "/assets/post-assets/2018-09-28-using-yaml-in-typescript/cover.png"
 ---
 `yaml`은 데이터를 가볍게 담고있는 포맷입니다. 정말 직관적인 포맷으로 문자열, 숫자, 배열, 리스트 등의 자료형도 지원을 합니다.

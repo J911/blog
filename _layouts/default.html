@@ -1,21 +1,16 @@
 <html>
+<head>
     {%- include head.html -%}
+</head>
+
 <body>
-    <div class="wrapper">
 
-        {%- include loader.html -%}
+    {%- include navigator.html -%}
 
-        {%- include navigator.html -%}
+    {{ content }}
+ 
+    {%- include footer.html -%}
 
-        {%- include side-menu.html -%}
-
-        <div class="main container">
-            {{ content }}
-        </div>
-        
-        {%- include footer.html -%}
-
-    </div>
 
     {%- include analytics.html -%}
 

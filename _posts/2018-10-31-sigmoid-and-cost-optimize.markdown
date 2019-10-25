@@ -4,10 +4,12 @@ comments: true
 title:  "Sigmoid 함수를 사용한 Logistic regression 기법의 코스트 최적화"
 date:   2018-10-31
 author: "J911"
-categories: log ai
+categories: deeplearning
 cover: "/assets/post-assets/2018-10-31-sigmoid-and-cost-optimize/cover.png"
 ---
-로지스틱 회기분석(Logistic regression)에서 cost를 optimize하기 위해서는 활성함수를 미분하여야한다. 하지만 기존의 계단 형태의 활성함수는 **미분이 불가**한 함수로서 cost optimize하는데 한계가 존재하였다. 그래서 등장한 것이 **시그모이드**함수이다.
+로지스틱 회기분석(Logistic regression)에서 cost를 optimize하기 위해서는 활성함수를 미분하여야한다. 
+
+하지만 기존의 계단 형태의 활성함수는 **미분이 불가**한 함수로서 cost optimize하는데 한계가 존재하였다. 그래서 등장한 것이 **시그모이드**함수이다.
 
 ![sigmoid](/assets/post-assets/2018-10-31-sigmoid-and-cost-optimize/sigmoid.png)
 

@@ -4,7 +4,7 @@ comments: true
 title:  "Bower로 나의 컴포넌트 배포하기"
 date:   2018-10-03
 author: "J911"
-categories: nodejs web
+categories: web
 cover: "/assets/post-assets/2018-10-03-publish-bower-component/cover.png"
 ---
 Bower에 컴포넌트를 배포하는 것 npm에 모듈을 등록하는 것과 비교해보면 정말 간단하다.

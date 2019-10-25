@@ -4,7 +4,7 @@ comments: true
 title:  "타입스크립트와 JWT로 인증 API 구축하기"
 date:   2018-09-27
 author: "J911"
-categories: nodejs web JWT typescript api
+categories: server
 cover: "/assets/post-assets/2018-09-27-build-jwt-auth-api-with-typescript/cover.png"
 ---
 타입스크립트와 `JWT(JSON Web Token)`을 사용해서 간단한 express API 서버를 만들어보고자 한다.

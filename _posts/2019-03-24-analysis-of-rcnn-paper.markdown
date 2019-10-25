@@ -4,12 +4,11 @@ comments: true
 title:  "혼자 논문읽기: RCNN 논문 분석"
 date:   2019-03-24
 author: "J911"
-categories: log ai paper
+categories: deeplearning
 cover: "/assets/post-assets/2019-03-24-analysis-of-rcnn-paper/cover.png"
 ---
 
 대학원진학을 준비하면서 나도 슬슬 논문을 볼줄 알아야겠다는 생각을 시작했다. 
-그래서 여러 논문을 읽어보려는 시도를 하고 있는데, 그냥하려니 동기가 잘 생기지 않아서 블로깅과 [Youtube 채널](https://www.youtube.com/playlist?list=PLUg_fHoAY_3BHsBXINnG26sSFckmG7XQ9)을 하나 운영해 볼까 한다.
 
 > 참고로 이 블로깅과 영상에서는 내가 이해하고 있는 부분에 대해 정리를 하는 것으로 논문의 모든 내용을 다루지는 않는다.
 

@@ -1,33 +1,50 @@
 ---
 layout: default
 ---
-
-<div class="card--group" id="card-wrapper">
+<div class="post-wrapper" id="post-wrapper">
     {%- if paginator.posts.size > 0 -%}
     {%- for post in paginator.posts -%}
-        <a href="{{ post.url | relative_url }}">
-            <div class="card">
-                <div class="card__cover">
-                    <img src="{{ post.cover }}" alt="cover">
-                </div>
-                <div class="card__header">
-                    <h3 class="card__header__title" title="{{ post.title | escape }}">{{ post.title | escape }}</h3>
-                </div>
-                <div class="card__body">
-                    {%- assign date_format = paginator.minima.date_format | default: "%b %-d, %Y" -%}
-                    {{ post.date | date: date_format }}
-                    
-                    {{ post.excerpt }}
+        <!-- <a href="{{ post.url | relative_url }}"> -->
+            <div class="card" onclick="location.href='{{ post.url | relative_url }}'">
+                <div class="card__cover" style="background-image: url('{{ post.cover }}');"></div>
+                <div class="card__contents">
+                    <div class="card__contents__tag">
+                        {{ post.categories[0] }}
+                    </div>
+                    <div class="card__contents__title">
+                        {{ post.title | escape }}
+                    </div>
+                    <div class="card__contents__body">
+                        {{ post.excerpt }}
+                    </div>
                 </div>
             </div>
-        </a>
+        <!-- </a> -->
     {%- endfor -%}
-{%- endif -%}
+    {%- endif -%}
 </div>
+<script>
+
+    function postInit() {
+        var posts = document.getElementsByClassName('card')
+        var numOfPosts = posts.length
+
+        for (var i = 0; i<numOfPosts; i++) {
+            endRow = Math.ceil(posts[i].textContent.length / 28) + 2
+            posts[i].style.gridRowEnd = "span " + endRow
+            setTimeout(appendCard.bind(null, posts[i]), Math.random()*500)
+        }
+    }
+    
+    function appendCard(post) {
+        post.className += " post-ani"
+    }
+    postInit()
+</script>
 
 <script src="{{ '/assets/lib/InfiniteScroll.js' }}"></script>
 <script>
-    var postWrapperId = 'card-wrapper';
+    var postWrapperId = 'post-wrapper';
     var paginatePath = '/page/'
-    new InfiniteScroll(paginatePath, postWrapperId);
+    new InfiniteScroll(paginatePath, postWrapperId, postInit);
 </script>

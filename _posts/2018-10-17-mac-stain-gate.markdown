@@ -4,7 +4,7 @@ comments: true
 title:  "맥북 코팅 벗겨짐 문제 무상수리 후기: 스테인게이트"
 date:   2018-10-17
 author: "J911"
-categories: log mac
+categories: logs
 cover: "/assets/post-assets/2018-10-17-mac-stain-gate/ubase.jpg"
 ---
 

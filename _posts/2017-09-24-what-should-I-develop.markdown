@@ -4,7 +4,7 @@ comments: true
 title:  "어떤 기술을 개발해야 할까"
 date:   2017-09-24
 author: "J911"
-categories: log
+categories: logs
 cover: "/assets/post-assets/2017-09-24-what-should-I-develop/cover.jpg"
 ---
 개발을 하다 문득 든 생각이,   

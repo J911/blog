@@ -1,15 +1,13 @@
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="shortcut icon" href="{{ '/assets/image/logo.ico' }}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' }}">
-    <link rel="stylesheet" href="{{ '/assets/css/syntax.css' }}">
-    {%- seo -%}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="shortcut icon" href="{{ '/assets/image/logo.ico' }}">
+<link rel="stylesheet" href="{{ '/assets/css/master.css' }}">
+<link rel="stylesheet" href="{{ '/assets/css/relative.css' }}">
+<link rel="stylesheet" href="{{ '/assets/css/syntax.css' }}">
+{%- seo -%}
 
-    {% if page.cover != null %}
-        <meta property="og:image" content="{{ page.cover }}"/>
-    {% else %}
-        <meta property="og:image" content="{{ '/assets/image/cover.jpg' }}"/>
-    {% endif %}
-</head>
+{% if page.cover != null %}
+    <meta property="og:image" content="{{ page.cover }}"/>
+{% else %}
+    <meta property="og:image" content="{{ '/assets/image/cover.jpg' }}"/>
+{% endif %}

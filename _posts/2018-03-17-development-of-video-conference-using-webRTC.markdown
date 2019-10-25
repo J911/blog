@@ -4,7 +4,7 @@ comments: true
 title:  "webRTC를 이용한 화상회의 개발"
 date:   2018-03-17
 author: "J911"
-categories: web webRTC
+categories: web
 cover: "/assets/post-assets/2018-03-17-development-of-video-conference-using-webRTC/cover.jpg"
 ---
 webRTC를 배울 기회가 생겼는데 국문 자료가 많지 않아 나름 정리를 해서 기록해 두려고 한다.

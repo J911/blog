@@ -4,7 +4,7 @@ comments: true
 title:  "타입스크립트로 텔레그램 챗봇 만들기"
 date:   2018-09-24
 author: "J911"
-categories: nodejs typescript telegram chatbot bot 
+categories: server
 cover: "/assets/post-assets/2018-09-24-create-telegrambot-with-typescript/cover.png"
 ---
 텔레그램을 이용한 투두(TODO)앱을 만들고싶어서 텔레그램 챗봇을 타입스크립트와 함께 쓰는 법을 공부해 보았다.

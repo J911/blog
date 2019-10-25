@@ -4,7 +4,7 @@ comments: true
 title:  "자바스크립트와 옵저버 패턴(Observer Pattern)"
 date:   2018-10-08
 author: "J911"
-categories: nodejs js
+categories: server
 cover: "/assets/post-assets/2018-10-08-observer-pattern/cover.png"
 ---
 옵저버 패턴을 공부하면서 간단하게 기록해보기로하였다.

@@ -1,0 +1,83 @@
+@media only screen and (max-width: 1400px) {
+    .post-wrapper {
+        grid-template-columns: auto auto auto;
+        padding: 40px 5% 60px 5%;
+        
+
+        width: 90%;
+
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .post-wrapper {
+        grid-template-columns: auto auto;
+    }
+}
+  
+@media only screen and (max-width: 700px) {
+    .post-wrapper {
+        grid-template-columns: auto;
+        width: 100%;
+        padding: 40px 0 60px 0;
+        margin: 100vh 0 0 0;
+    }
+    .post-wrapper.post--main {
+        padding: 40px 20px 60px 20px;
+    }
+    .card {
+        border-radius: 0;
+        box-shadow: 0 0 0 transparent;
+        border: 1px solid rgb(219, 219, 219);
+    }
+    .card:hover {
+        box-shadow: 0 0 0 transparent;
+
+    }
+    .post-wrapper > .card:nth-child(2) {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+    .post-wrapper > .card:nth-child(2) .card__cover {
+        height: 140px;
+        width: 100%;
+        background-size: 100% auto;
+    }
+    
+    .post-wrapper > .card:nth-child(2):hover .card__cover {
+        background-size: 105% auto;
+        transition: all .2s;
+        box-shadow: 0 0 0 transparent;
+    }
+    .post-wrapper > .card:nth-child(2) .card__contents {
+        width: 100%;
+        padding: 10px 20px;
+        height: 200px;
+    }
+    .post-wrapper > .card:nth-child(1) {
+        height: 100vh;
+    }
+    .post-wrapper > .card:nth-child(1) .card__contents {
+        /* top: 25%; */
+        left: 0;
+        max-width: 100%;
+        opacity: 1;
+    }
+    .footer__header {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .sitemap-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        margin-top: 20px;
+        grid-column-gap: 20px;
+        grid-row-gap: 5px;
+        width: 100%;
+    }
+    
+}
+  

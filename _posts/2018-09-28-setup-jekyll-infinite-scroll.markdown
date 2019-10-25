@@ -4,7 +4,7 @@ comments: true
 title:  "지킬 블로그에 무한스크롤 기능 추가하기"
 date:   2018-09-28
 author: "J911"
-categories: log web jekyll
+categories: web
 cover: "/assets/post-assets/2018-09-28-setup-jekyll-infinite-scroll/cover.png"
 ---
 지킬 블로그에 포스팅이 점점 많아지면서 무한스크롤 기능이 필요하게 되었다.
