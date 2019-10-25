@@ -7,6 +7,9 @@
         width: 90%;
 
     }
+    .post--contents {
+        width: 100%;
+    }
 }
 
 @media only screen and (max-width: 950px) {
