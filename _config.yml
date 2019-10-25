@@ -25,7 +25,7 @@ github_username:  J911
 
 google_analytics: UA-126194835-1
 
-paginate: 10
+paginate: 16
 paginate_path: "/page/:num"
 
 # Produces a cleaner folder structure when using categories

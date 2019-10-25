@@ -1,41 +1,49 @@
 ---
 layout: default
 ---
-<div class="article">
-    <div class="post-wrapper">
-    {%- if site.posts.size > 0 -%}
-        {% assign category = page.category | default: page.title %}
-        {%- for post in site.categories[category] -%}
-            <div class="card" onclick="location.href='{{ post.url | relative_url }}'">
-                <div class="card__cover" style="background-image: url('{{ post.cover }}');"></div>
-                <div class="card__contents">
-                    <div class="card__contents__tag">
-                        Deep Learning
-                    </div>
-                    <div class="card__contents__title">
-                        {{ post.title | escape }}
-                    </div>
-                    <div class="card__contents__body">
-                        {{ post.excerpt }}
-                    </div>
+<div class="post-wrapper" id="post-wrapper">
+{%- if site.posts.size > 0 -%}
+    {% assign category = page.category | default: page.title %}
+    {%- for post in site.categories[category] -%}
+        <div class="card" onclick="location.href='{{ post.url | relative_url }}'">
+            <div class="card__cover" style="background-image: url('{{ post.cover }}');"></div>
+            <div class="card__contents">
+                <div class="card__contents__tag">
+                    Deep Learning
+                </div>
+                <div class="card__contents__title">
+                    {{ post.title | escape }}
+                </div>
+                <div class="card__contents__body">
+                    {{ post.excerpt }}
                 </div>
             </div>
-        {%- endfor -%}
-    {%- endif -%}
-    </div>
+        </div>
+    {%- endfor -%}
+{%- endif -%}
 </div>
 
 <script>
-    var posts = document.getElementsByClassName('card')
-    var numOfPosts = posts.length
+    function postInit() {
+        var posts = document.getElementsByClassName('card')
+        var numOfPosts = posts.length
 
-    for (var i = 0; i<numOfPosts; i++) {
-        endRow = Math.ceil(posts[i].textContent.length / 30) + 1
-        posts[i].style.gridRowEnd = "span " + endRow
-        setTimeout(appendCard.bind(null, posts[i]), Math.random()*500)
+        for (var i = 0; i<numOfPosts; i++) {
+            endRow = Math.ceil(posts[i].textContent.length / 28) + 10
+            posts[i].style.gridRowEnd = "span " + endRow
+            setTimeout(appendCard.bind(null, posts[i]), Math.random()*500)
+        }
     }
     
     function appendCard(post) {
         post.className += " post-ani"
     }
+    postInit()
+</script>
+
+<script src="{{ '/assets/lib/InfiniteScroll.js' }}"></script>
+<script>
+    var postWrapperId = 'post-wrapper';
+    var paginatePath = '/page/'
+    new InfiniteScroll(paginatePath, postWrapperId, postInit);
 </script>
