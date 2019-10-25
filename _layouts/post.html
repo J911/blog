@@ -8,7 +8,7 @@ layout: default
         <div class="card__contents">
             <div class="card__contents__tag">
                 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                Deep Learning | {{ page.date | date: date_format }}
+                {{ page.categories[0] }} | {{ page.date | date: date_format }}
             </div>
             <div class="card__contents__title">
                 {{ page.title | escape }} 

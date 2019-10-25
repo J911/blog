@@ -68,7 +68,7 @@ a {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     padding: 40px 80px 60px 80px;
-    margin: 500px auto 0 auto;
+    margin: 496px auto 0 auto;
     width: 1300px;
 
     box-sizing: border-box;
@@ -78,6 +78,7 @@ a {
 .post-wrapper.post--main {
     display: block;
     background-color: white;
+    width: 100%;
 }
 .card {
     width: 100%;
